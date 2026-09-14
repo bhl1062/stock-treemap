@@ -28,7 +28,7 @@ jobs:
             libssl-dev libbz2-dev libreadline-dev libsqlite3-dev \
             libncurses5-dev libncursesw5-dev xz-utils tk-dev liblzma-dev
 
-       - name: Install buildozer and cython
+      - name: Install buildozer and cython
         run: python3.11 -m pip install --upgrade buildozer "Cython==0.29.33"
 
       - name: Build with Buildozer
