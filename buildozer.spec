@@ -16,7 +16,8 @@ fullscreen = 0
 
 # 인터넷 접근 권한 (네이버에서 시세를 가져오기 위해 필수)
 android.permissions = INTERNET
-
+# 클로드 권고로 추가 함 Android SDK 라이선스 동의
+android.accept_sdk_license = True
 android.api = 33
 android.minapi = 24
 android.ndk = 25b
