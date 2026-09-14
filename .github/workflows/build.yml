@@ -29,10 +29,10 @@ jobs:
             libncurses5-dev libncursesw5-dev xz-utils tk-dev liblzma-dev
 
       - name: Install buildozer and cython
-        run: pip install --upgrade buildozer cython
+        run: python3.11 -m pip install --upgrade buildozer cython
 
       - name: Build with Buildozer
-        run: buildozer -v android debug
+        run: python3.11 -m buildozer -v android debug
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
